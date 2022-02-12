@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Hover Test</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .imagebox{
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+        .imagebox .image {
+            border: 1px solid black;
+            height: 220px;
+            width: 350px;
+        }
+        .imagebox img {
+            width: 300px;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+        .imagebox .image:hover {
+            width: 550px;
+            height: 350px;
+            transition-duration: 1s;
+
+        }
+        .imagebox img:hover{
+            width: 500px;
+            transition-duration: 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+<h2>고양이 사진</h2>
+<p>고양이 사진에 마우스를 대면 사진이 커집니다!</p>
+    <div class="imagebox">
+        <div class="image">
+            <img src="../image/cat.jpg" alt="고양이">
+        </div>
+    </div>
+
+</body>
+</html>
